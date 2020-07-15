@@ -20,3 +20,8 @@ func FromStringHex(str string) (Buffer, error) {
 func FromString(str string) Buffer {
 	return []byte(str)
 }
+
+// Bytes ...
+func (b *Buffer) Bytes() []byte {
+	return []byte(*b)
+}
